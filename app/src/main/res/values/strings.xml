@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notifications</string>
+    <string name="action_settings">Settings</string>
+    <string name="developer_name">Developer: Osmar I. Cancino Díaz</string>
+    <string name="email_developer">o.cancinodiaz@gmail.com</string>
+    <string name="details_app">App for show Notifications customized and vibrations in Apps Android</string>
+    <string name="title_1">Details Notifications</string>
+    <string name="title_2">Developer Android</string>
+    <string name="start_note">Start Notification</string>
+    <string name="cancel_note">Cancel Notification</string>
+    <string name="update_note">Update Notification</string>
+    <string name="start_vibration">Start Vibration</string>
+
+
+</resources>
