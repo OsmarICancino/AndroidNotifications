@@ -88,24 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void displayNotification() {
         Log.i("Start", "notification");
-        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-
-        int icono = R.mipmap.ic_launcher;
-        CharSequence titulo = "Tutorial Dalvik";
-        long hora = System.currentTimeMillis();
-
-        Notification notif = new Notification(icono, titulo, hora);
-
-        CharSequence titulo_1 = "Android Development | Dalvik";
-        CharSequence descripcion = "Ejemplo Notificacion | Dalvik";
-
-        Intent nextActivity = new Intent(getApplicationContext(), DetailsNotifications.class);
-
-        PendingIntent contIntent = PendingIntent.getActivity(getApplicationContext(), 0, nextActivity, 0);
-
-        notif.setLatestEventInfo(getApplicationContext(), titulo, descripcion, contIntent);
-
-        /*
+        
         // Invoking the default notification service /
         //NotificationCompat.Builder  mBuilder =
                 new NotificationCompat.Builder(this);
@@ -138,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
 	      // notificationID allows you to update the notification later on. /
-        mNotificationManager.notify(notificationID, mBuilder.build()); */
+        mNotificationManager.notify(notificationID, mBuilder.build());
     }
 
     protected void cancelNotification() {
@@ -153,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationCompat.Builder  mBuilder =
                 new NotificationCompat.Builder(this);
 
-        mBuilder.setContentTitle("UP Actualiza");
+        mBuilder.setContentTitle("Dalvik Notifications Update!");
         mBuilder.setContentText("Se actualizo el mensaje");
         mBuilder.setTicker("Updated!");
         mBuilder.setSmallIcon(R.drawable.dalvik);
